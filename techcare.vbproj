@@ -1,0 +1,488 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F5E00163-E950-41FE-BB21-21F802A98E12}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>techcare.My.MyApplication</StartupObject>
+    <RootNamespace>techcare</RootNamespace>
+    <AssemblyName>techcare</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>techcare.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>techcare.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Guna.UI">
+      <HintPath>..\..\..\Downloads\Guna.UI-Framework-Lib-master\Guna.UI-Framework-Lib-master\Guna.UI WinForms\.net 4.0\Guna.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CHOOSEFIRST.Designer.vb">
+      <DependentUpon>CHOOSEFIRST.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CHOOSEFIRST.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="custABOUT.Designer.vb">
+      <DependentUpon>custABOUT.vb</DependentUpon>
+    </Compile>
+    <Compile Include="custABOUT.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="custAPPOINTMENT.Designer.vb">
+      <DependentUpon>custAPPOINTMENT.vb</DependentUpon>
+    </Compile>
+    <Compile Include="custAPPOINTMENT.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="custCART.Designer.vb">
+      <DependentUpon>custCART.vb</DependentUpon>
+    </Compile>
+    <Compile Include="custCART.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="custDELIVERY.Designer.vb">
+      <DependentUpon>custDELIVERY.vb</DependentUpon>
+    </Compile>
+    <Compile Include="custDELIVERY.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="custFAQ.Designer.vb">
+      <DependentUpon>custFAQ.vb</DependentUpon>
+    </Compile>
+    <Compile Include="custFAQ.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="custFORGETPASS.Designer.vb">
+      <DependentUpon>custFORGETPASS.vb</DependentUpon>
+    </Compile>
+    <Compile Include="custFORGETPASS.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="customerlogin.Designer.vb">
+      <DependentUpon>customerlogin.vb</DependentUpon>
+    </Compile>
+    <Compile Include="customerlogin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="customerpharmacy.Designer.vb">
+      <DependentUpon>customerpharmacy.vb</DependentUpon>
+    </Compile>
+    <Compile Include="customerpharmacy.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="customerregister.Designer.vb">
+      <DependentUpon>customerregister.vb</DependentUpon>
+    </Compile>
+    <Compile Include="customerregister.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="custPAY1.Designer.vb">
+      <DependentUpon>custPAY1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="custPAY1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="custPAY2.Designer.vb">
+      <DependentUpon>custPAY2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="custPAY2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="custPROFILE.Designer.vb">
+      <DependentUpon>custPROFILE.vb</DependentUpon>
+    </Compile>
+    <Compile Include="custPROFILE.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="custPROG1.Designer.vb">
+      <DependentUpon>custPROG1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="custPROG1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="custPROG2.Designer.vb">
+      <DependentUpon>custPROG2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="custPROG2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="custPROG3.Designer.vb">
+      <DependentUpon>custPROG3.vb</DependentUpon>
+    </Compile>
+    <Compile Include="custPROG3.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="custTRACKER.Designer.vb">
+      <DependentUpon>custTRACKER.vb</DependentUpon>
+    </Compile>
+    <Compile Include="custTRACKER.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="docAPPOINTMENT.Designer.vb">
+      <DependentUpon>docAPPOINTMENT.vb</DependentUpon>
+    </Compile>
+    <Compile Include="docAPPOINTMENT.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="docBOOKING.Designer.vb">
+      <DependentUpon>docBOOKING.vb</DependentUpon>
+    </Compile>
+    <Compile Include="docBOOKING.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="doclogin.Designer.vb">
+      <DependentUpon>doclogin.vb</DependentUpon>
+    </Compile>
+    <Compile Include="doclogin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="docPROFILE.Designer.vb">
+      <DependentUpon>docPROFILE.vb</DependentUpon>
+    </Compile>
+    <Compile Include="docPROFILE.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="docregister.Designer.vb">
+      <DependentUpon>docregister.vb</DependentUpon>
+    </Compile>
+    <Compile Include="docregister.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="faq.Designer.vb">
+      <DependentUpon>faq.vb</DependentUpon>
+    </Compile>
+    <Compile Include="faq.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.vb">
+      <DependentUpon>Form1.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="INFO.Designer.vb">
+      <DependentUpon>INFO.vb</DependentUpon>
+    </Compile>
+    <Compile Include="INFO.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="infoadmin.Designer.vb">
+      <DependentUpon>infoadmin.vb</DependentUpon>
+    </Compile>
+    <Compile Include="infoadmin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="kpi.Designer.vb">
+      <DependentUpon>kpi.vb</DependentUpon>
+    </Compile>
+    <Compile Include="kpi.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="login.Designer.vb">
+      <DependentUpon>login.vb</DependentUpon>
+    </Compile>
+    <Compile Include="login.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="partner.Designer.vb">
+      <DependentUpon>partner.vb</DependentUpon>
+    </Compile>
+    <Compile Include="partner.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="sellerADDITEM.Designer.vb">
+      <DependentUpon>sellerADDITEM.vb</DependentUpon>
+    </Compile>
+    <Compile Include="sellerADDITEM.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="sellerFORGORPASSWORD.Designer.vb">
+      <DependentUpon>sellerFORGORPASSWORD.vb</DependentUpon>
+    </Compile>
+    <Compile Include="sellerFORGORPASSWORD.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="sellerlogin.Designer.vb">
+      <DependentUpon>sellerlogin.vb</DependentUpon>
+    </Compile>
+    <Compile Include="sellerlogin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="sellerORDERRECEIVED.Designer.vb">
+      <DependentUpon>sellerORDERRECEIVED.vb</DependentUpon>
+    </Compile>
+    <Compile Include="sellerORDERRECEIVED.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="sellerPROFILE.Designer.vb">
+      <DependentUpon>sellerPROFILE.vb</DependentUpon>
+    </Compile>
+    <Compile Include="sellerPROFILE.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SellerRegisterTrue.Designer.vb">
+      <DependentUpon>SellerRegisterTrue.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SellerRegisterTrue.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserControl1.Designer.vb">
+      <DependentUpon>UserControl1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl1.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="CHOOSEFIRST.resx">
+      <DependentUpon>CHOOSEFIRST.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="custABOUT.resx">
+      <DependentUpon>custABOUT.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="custAPPOINTMENT.resx">
+      <DependentUpon>custAPPOINTMENT.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="custCART.resx">
+      <DependentUpon>custCART.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="custDELIVERY.resx">
+      <DependentUpon>custDELIVERY.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="custFAQ.resx">
+      <DependentUpon>custFAQ.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="custFORGETPASS.resx">
+      <DependentUpon>custFORGETPASS.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="customerlogin.resx">
+      <DependentUpon>customerlogin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="customerpharmacy.resx">
+      <DependentUpon>customerpharmacy.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="customerregister.resx">
+      <DependentUpon>customerregister.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="custPAY1.resx">
+      <DependentUpon>custPAY1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="custPAY2.resx">
+      <DependentUpon>custPAY2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="custPROFILE.resx">
+      <DependentUpon>custPROFILE.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="custPROG1.resx">
+      <DependentUpon>custPROG1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="custPROG2.resx">
+      <DependentUpon>custPROG2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="custPROG3.resx">
+      <DependentUpon>custPROG3.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="custTRACKER.resx">
+      <DependentUpon>custTRACKER.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="docAPPOINTMENT.resx">
+      <DependentUpon>docAPPOINTMENT.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="docBOOKING.resx">
+      <DependentUpon>docBOOKING.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="doclogin.resx">
+      <DependentUpon>doclogin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="docPROFILE.resx">
+      <DependentUpon>docPROFILE.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="docregister.resx">
+      <DependentUpon>docregister.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="faq.resx">
+      <DependentUpon>faq.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="INFO.resx">
+      <DependentUpon>INFO.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="infoadmin.resx">
+      <DependentUpon>infoadmin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kpi.resx">
+      <DependentUpon>kpi.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="login.resx">
+      <DependentUpon>login.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="partner.resx">
+      <DependentUpon>partner.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="sellerADDITEM.resx">
+      <DependentUpon>sellerADDITEM.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="sellerFORGORPASSWORD.resx">
+      <DependentUpon>sellerFORGORPASSWORD.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="sellerlogin.resx">
+      <DependentUpon>sellerlogin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="sellerORDERRECEIVED.resx">
+      <DependentUpon>sellerORDERRECEIVED.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="sellerPROFILE.resx">
+      <DependentUpon>sellerPROFILE.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SellerRegisterTrue.resx">
+      <DependentUpon>SellerRegisterTrue.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl1.resx">
+      <DependentUpon>UserControl1.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-male-user-100.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\usman-yousaf-pTrhfmj2jDA-unsplash.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\national-cancer-institute-cw2Zn2ZQ9YQ-unsplash.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\profit-margin-by-sales-rep.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-booking-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-arrow-50 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-arrow-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-dustbin-66.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hide2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hide11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\view2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\view11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-arrow-60.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+</Project>
